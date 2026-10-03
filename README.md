@@ -1,6 +1,14 @@
-# Real-Time Chat App
+# 💬 Real-Time Chat Application Using MERN and Socket.IO
 
-A full-stack MERN (MongoDB, Express.js, React, Node.js) real-time chat application powered by Socket.IO, featuring secure httpOnly JWT authentication, rate limiting, real-time message delivery acknowledgements, glassmorphism UI design, automated Jest tests, and GitHub Actions CI.
+![NodeJS](https://img.shields.io/badge/Node.js-20.x-green?style=flat-square&logo=node.js)
+![Express](https://img.shields.io/badge/Express-5.x-lightgrey?style=flat-square&logo=express)
+![React](https://img.shields.io/badge/React-19.x-blue?style=flat-square&logo=react)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green?style=flat-square&logo=mongodb)
+![Socket.IO](https://img.shields.io/badge/Socket.IO-RealTime-black?style=flat-square&logo=socketdotio)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=flat-square&logo=tailwindcss)
+![Jest](https://img.shields.io/badge/Jest-Testing-c21325?style=flat-square&logo=jest)
+
+A full-stack real-time communication framework integrating **MongoDB**, **Express.js**, **React 19**, and **Node.js (MERN)** with **Socket.IO**. The proposed architecture combines **secure HTTP-only JWT authentication**, **in-memory socket handshake authorization**, and **Zustand state management** for real-time presence tracking (`getOnlineUsers`) and bi-directional message delivery acknowledgements (`messageDelivered`), supported by automated **Jest integration testing** and **GitHub Actions CI/CD**.
 
 
 ---
@@ -8,7 +16,7 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) real-time chat applicati
 ## 🛠️ Tech Stack
 
 - **Frontend**: React 19, Vite, Zustand (State Management), React Router DOM, Axios, Socket.IO Client, Tailwind CSS v4, Lucide Icons
-- **Backend**: Node.js, Express 5, Mongoose 9, MongoDB Atlas / Local MongoDB, Socket.IO, Bcrypt.js, JsonWebToken, Cookie-Parser, Helmet, Express-Rate-Limit
+- **Backend**: Node.js, Express 5, Mongoose 9, MongoDB Atlas / Local MongoDB, Socket.IO, Bcryptjs, JsonWebToken, Cookie-Parser, Helmet, Express-Rate-Limit
 - **Testing & CI**: Jest, Supertest, MongoDB Memory Server, GitHub Actions CI Workflow
 
 ---
@@ -90,7 +98,7 @@ npm install
 npm run dev
 ```
 
-The application will be running at `http://localhost:5173` pointing to `http://localhost:5001/api`.
+The application will be running at `http://localhost:5173` pointing to `http://localhost:3001/api`.
 
 ---
 
