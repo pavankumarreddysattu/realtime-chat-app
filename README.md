@@ -1,4 +1,4 @@
-# 💬 Real-Time Chat Application Using MERN and Socket.IO
+# 💬 Real-Time Chat Application
 
 ![NodeJS](https://img.shields.io/badge/Node.js-20.x-green?style=flat-square&logo=node.js)
 ![Express](https://img.shields.io/badge/Express-5.x-lightgrey?style=flat-square&logo=express)
@@ -8,7 +8,7 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=flat-square&logo=tailwindcss)
 ![Jest](https://img.shields.io/badge/Jest-Testing-c21325?style=flat-square&logo=jest)
 
-A modern full-stack real-time chat application built with **MongoDB**, **Express.js**, **React 19**, and **Node.js (MERN)** using **Socket.IO**. Features secure cookie-based JWT authentication, live online presence tracking, real-time messaging with delivery receipts, and a clean dark glassmorphism UI.
+A full-stack real-time chat application using the MERN stack and Socket.IO. Implemented JWT-based authentication with HTTP-only cookies, secure user login, real-time messaging, online/offline user status, and message delivery acknowledgements.
 
 ---
 
