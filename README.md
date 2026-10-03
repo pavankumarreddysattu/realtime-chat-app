@@ -10,14 +10,6 @@
 
 A full-stack real-time chat application using the MERN stack and Socket.IO. Implemented JWT-based authentication with HTTP-only cookies, secure user login, real-time messaging, online/offline user status, and message delivery acknowledgements.
 
----
-
-## 🚀 Live Demo & Preview
-
-- **Live Demo Link**: `[Insert Live Demo URL Here]`
-- **App Screenshot**:
-
-![App Preview]([Insert Screenshot Path / Image URL Here])
 
 ---
 
