@@ -2,14 +2,6 @@
 
 A full-stack MERN (MongoDB, Express.js, React, Node.js) real-time chat application powered by Socket.IO, featuring secure httpOnly JWT authentication, rate limiting, real-time message delivery acknowledgements, glassmorphism UI design, automated Jest tests, and GitHub Actions CI.
 
----
-
-## 🚀 Live Demo & Preview
-
-- **Live Demo Link**: `[Insert Live Demo URL Here]`
-- **App Screenshot**:
-
-![App Preview]([Insert Screenshot Path / Image URL Here])
 
 ---
 
