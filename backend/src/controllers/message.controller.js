@@ -8,7 +8,6 @@ export const getUsersForSidebar = async (req, res, next) => {
   try {
     const loggedInUserId = req.user._id;
     const filteredUsers = await User.find({ _id: { $ne: loggedInUserId } }).select("-password");
-
     res.status(200).json(filteredUsers);
   } catch (error) {
     next(error);
@@ -41,12 +40,10 @@ export const sendMessage = async (req, res, next) => {
 
     const trimmedText = text ? text.trim() : "";
 
-    // Validate that message is not empty
     if (!trimmedText && !image) {
       return res.status(400).json({ message: "Message content (text or image) is required" });
     }
 
-    // Cap message length server-side
     if (trimmedText.length > MAX_MESSAGE_LENGTH) {
       return res.status(400).json({
         message: `Message text cannot exceed ${MAX_MESSAGE_LENGTH} characters`,

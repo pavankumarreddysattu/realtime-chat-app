@@ -2,7 +2,6 @@ import { generateToken, getCookieOptions } from "../lib/utils.js";
 import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 
-// Helper regex to validate email format
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const signup = async (req, res, next) => {
@@ -23,7 +22,6 @@ export const signup = async (req, res, next) => {
     }
 
     const existingUser = await User.findOne({ email: normalizedEmail });
-
     if (existingUser) {
       return res.status(400).json({ message: "Email already exists" });
     }
@@ -37,7 +35,6 @@ export const signup = async (req, res, next) => {
       password: hashedPassword,
     });
 
-    // Save user to database before generating and attaching token cookie
     await newUser.save();
     generateToken(newUser._id, res);
 
@@ -66,7 +63,6 @@ export const login = async (req, res, next) => {
     }
 
     const user = await User.findOne({ email: normalizedEmail });
-
     if (!user) {
       return res.status(400).json({ message: "Invalid Credentials" });
     }
@@ -91,7 +87,6 @@ export const login = async (req, res, next) => {
 
 export const logout = (req, res) => {
   try {
-    // Clear the httpOnly cookie with matching options used when setting it
     res.cookie("jwt", "", {
       ...getCookieOptions(),
       maxAge: 0,
@@ -106,7 +101,6 @@ export const checkAuth = (req, res) => {
   try {
     res.status(200).json(req.user);
   } catch (error) {
-    console.log("Error in checkAuth controller", error.message);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
