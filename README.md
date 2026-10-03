@@ -8,8 +8,16 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=flat-square&logo=tailwindcss)
 ![Jest](https://img.shields.io/badge/Jest-Testing-c21325?style=flat-square&logo=jest)
 
-A full-stack real-time communication framework integrating **MongoDB**, **Express.js**, **React 19**, and **Node.js (MERN)** with **Socket.IO**. The proposed architecture combines **secure HTTP-only JWT authentication**, **in-memory socket handshake authorization**, and **Zustand state management** for real-time presence tracking (`getOnlineUsers`) and bi-directional message delivery acknowledgements (`messageDelivered`), supported by automated **Jest integration testing** and **GitHub Actions CI/CD**.
+A modern full-stack real-time chat application built with **MongoDB**, **Express.js**, **React 19**, and **Node.js (MERN)** using **Socket.IO**. Features secure cookie-based JWT authentication, live online presence tracking, real-time messaging with delivery receipts, and a clean dark glassmorphism UI.
 
+---
+
+## 🚀 Live Demo & Preview
+
+- **Live Demo Link**: `[Insert Live Demo URL Here]`
+- **App Screenshot**:
+
+![App Preview]([Insert Screenshot Path / Image URL Here])
 
 ---
 
